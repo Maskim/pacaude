@@ -1,0 +1,720 @@
+.gt-content {
+  border: 1px solid #d5d5d5;
+  overflow: hidden;
+}
+
+.genealogical-tree-cont {
+  width: 100%;
+  max-width: initial !important;
+  position: relative
+}
+
+.genealogical-tree-cont .spinner {
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translate(-50%, -50%)
+}
+
+.gt-tree {
+  margin: 0 auto;
+  display: block;
+  width: max-content;
+  transition: all .3s;
+}
+
+.gt-tree ul {
+  text-align: center;
+  margin: 0 auto !important;
+  padding: 10px 0;
+  position: relative;
+  display: table;
+}
+
+.gt-tree li {
+  display: table-cell;
+  vertical-align: top;
+  position: relative;
+  padding: 10px 2px;
+}
+
+.gt-tree div.ind {
+  display: block;
+  width: 80px;
+  border: 1px solid;
+  position: relative;
+  background: #fff;
+  z-index: 5;
+  padding: 4px;
+  font-size: 12px;
+}
+
+.gt-tree div.ind > .info {}
+
+.gt-tree div.ind > .image {
+  padding-bottom: 5px;
+}
+
+.gt-tree .ind.F {
+  background: #ffdbe0;
+}
+
+.gt-tree .ind.M {
+  background: #daeef3;
+}
+
+.gt-hr div.ind {
+  width: auto !important;
+}
+
+.gt-hr div.ind > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.gt-hr div.ind > div.image {
+  padding-bottom: 0px;
+}
+
+.gt-hr div.ind > div.info {
+  max-width: 80px;
+}
+
+.gt-hr div.ind > div.image + div.info {
+  padding-left: 5px;
+  max-width: 160px;
+}
+
+.gt-hr div.ind > div.image > img {
+  width: 72px;
+  height: 72px;
+}
+
+
+
+/*****
+       .gt-style-1 
+       *****/
+.gt-style-1 {
+  display: block;
+  margin: 0 auto;
+  border: 0px;
+}
+
+
+.gt-style-1 .childs:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: -10px;
+  height: 20px;
+  border-left: 1px solid;
+}
+
+.gt-style-1 .child:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0;
+  border-top: 1px solid;
+}
+
+.gt-style-1 .child:first-child:before {
+  left: 50%;
+}
+
+.gt-style-1 .child:last-child:before {
+  right: 50%;
+}
+
+.gt-style-1 .child:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 0;
+  height: 10px;
+  border-left: 1px solid;
+}
+
+.gt-style-1 .families:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: -10px;
+  height: 20px;
+  border-left: 1px solid;
+}
+
+.gt-style-1 .family {
+  padding-top: 50px;
+}
+
+.gt-style-1 .family:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0;
+  border-top: 1px solid;
+}
+
+.gt-style-1 .family:first-child:before {
+  left: 50%;
+}
+
+.gt-style-1 .family:last-child:before {
+  right: 50%;
+}
+
+.gt-style-1 .family:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 0;
+  height: 50px;
+  border-left: 1px solid;
+}
+
+.gt-style-1 .family>.ind:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  top: -40px;
+  left: 50%;
+  margin-left: -15px;
+  background: #fff;
+  background-image: url(../img/heart.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.gt-style-1>.childs:before,
+.gt-style-1>.childs>.child:after {
+  content: none;
+}
+
+.gt-style-1 div.ind {
+  display: inline-block;
+}
+
+.gt-style-1 div.ind:empty {
+  display: none;
+}
+
+.gt-style-1 .birt-deat {
+  font-size: 10px;
+}
+
+/*****
+       .gt-style-2 
+       *****/
+.gt-style-2 {
+  display: block;
+  margin: 0 auto;
+  border: 0px;
+}
+
+.gt-style-2 div.ind {
+  width: 100px;
+  padding: 4px;
+  font-size: 12px;
+}
+
+.gt-style-2 .parents:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: -10px;
+  height: 20px;
+  border-left: 1px solid;
+}
+
+.gt-style-2 .parents:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -10px;
+  height: 20px;
+  border-left: 1px solid;
+}
+
+.gt-style-2 .parents:only-child:after {
+  border-left: 0px solid;
+}
+
+.gt-style-2 .parents>li:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 10px;
+  border-top: 1px solid;
+}
+
+.gt-style-2 .parents>li:first-child:before {
+  border-left: 1px solid;
+  left: 50%;
+}
+
+.gt-style-2 .parents>li:last-child:before {
+  border-right: 1px solid;
+  right: 50%;
+}
+
+.gt-style-2 .parents>li:only-child:before {
+  border-right: 0px solid;
+}
+
+.gt-style-2 .parents>li:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-bottom: 1px solid;
+}
+
+.gt-style-2 .parents>li:first-child:after {
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  left: 50%;
+}
+
+.gt-style-2 .parents>li:last-child:after {
+  border-right: 1px solid;
+  right: 50%;
+}
+
+.gt-style-2 .parents>li:only-child:after {
+  border-right: 0px solid;
+}
+
+.gt-style-2 .parents:only-child>li:after {
+  border-left: 0px solid;
+  border-right: 0px solid;
+  border-bottom: 0px solid;
+}
+
+.gt-style-2 .parents:only-child>li:only-child:after {
+  border-left: 1px solid;
+  height: 20px;
+  bottom: initial;
+}
+
+.gt-style-2 .childs>li:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 10px;
+  border-top: 1px solid;
+}
+
+.gt-style-2 .childs>li:first-child:before {
+  left: 50%;
+}
+
+.gt-style-2 .childs>li:last-child:before {
+  right: 50%;
+}
+
+.gt-style-2 .parents>li {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gt-style-2 .parents>li.spouse div.ind {
+  margin-left: -1px;
+}
+
+/*****
+       .gt-style-3 
+       *****/
+.gt-style-3 {
+  display: block;
+  margin: 0 auto;
+  border: 0px;
+}
+
+.gt-style-3 .parents:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: -10px;
+  height: 21px;
+  border-left: 1px solid;
+  z-index: 1
+}
+
+.gt-style-3 .parents:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 9px;
+  bottom: 9px;
+  background: white;
+}
+
+.gt-style-3 .parents>li:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 10px;
+  border-top: 1px solid;
+}
+
+.gt-style-3 .parents>li:first-child:before {
+  border-left: 1px solid;
+  left: 50%;
+}
+
+.gt-style-3 .parents>li:last-child:before {
+  border-right: 1px solid;
+  right: 50%;
+}
+
+.gt-style-3 .parents>li:only-child:before {
+  border-right: 0px solid;
+}
+
+.gt-style-3 .parents>li:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-bottom: 1px solid;
+}
+
+.gt-style-3 .parents>li:first-child:after {
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  left: 50%;
+}
+
+.gt-style-3 .parents>li:last-child:after {
+  border-right: 1px solid;
+  right: 50%;
+}
+
+.gt-style-3 .parents>li:only-child:after {
+  border-right: 0px solid;
+  z-index: 1;
+}
+
+.gt-style-3 .parents:only-child>li:after {
+  border-left: 0px solid;
+  border-bottom: 0px solid;
+}
+
+.gt-style-3 .parents:only-child>li:only-child:after {
+  border-left: 1px solid;
+  height: 20px;
+  bottom: initial;
+}
+
+.gt-style-3 .childs:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: -11px;
+  height: 21px;
+  border-left: 1px solid;
+  z-index: 1;
+}
+
+.gt-style-3 .childs>li:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 10px;
+  border-top: 1px solid;
+}
+
+.gt-style-3 .childs>li:first-child:before {
+  left: 50%;
+}
+
+.gt-style-3 .childs>li:last-child:before {
+  right: 50%;
+}
+
+.gt-style-3 .parents>li {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gt-style-3 .parents>li.spouse div.ind {
+  margin-left: -1px;
+}
+
+/*****
+       .gt-style-4 
+       *****/
+.gt-style-4 {
+  display: block;
+  margin: 0 auto;
+  border: 0px;
+}
+
+.gt-style-4 div.ind {
+  width: auto;
+}
+
+.gt-style-4 .parents:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: -10px;
+  height: 20px;
+  border-left: 1px solid;
+}
+
+.gt-style-4 .parents:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -10px;
+  height: 20px;
+  border-left: 1px solid;
+}
+
+.gt-style-4 .parents:only-child:after {
+  border-left: 0px solid;
+}
+
+.gt-style-4 .parents>li:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 10px;
+  border-top: 1px solid;
+}
+
+.gt-style-4 .parents>li:first-child:before {
+  border-left: 1px solid;
+  left: 50%;
+}
+
+.gt-style-4 .parents>li:last-child:before {
+  border-right: 1px solid;
+  right: 50%;
+}
+
+.gt-style-4 .parents>li:only-child:before {
+  border-right: 0px solid;
+}
+
+.gt-style-4 .parents>li:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-bottom: 1px solid;
+}
+
+.gt-style-4 .parents>li:first-child:after {
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  left: 50%;
+}
+
+.gt-style-4 .parents>li:last-child:after {
+  border-right: 1px solid;
+  right: 50%;
+}
+
+.gt-style-4 .parents>li:only-child:after {
+  border-right: 0px solid;
+}
+
+.gt-style-4 .parents:only-child>li:after {
+  border-left: 0px solid;
+  border-right: 0px solid;
+  border-bottom: 0px solid;
+}
+
+.gt-style-4 .parents:only-child>li:only-child:after {
+  border-left: 1px solid;
+  height: 20px;
+  bottom: initial;
+}
+
+.gt-style-4 .childs>li:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 10px;
+  border-top: 1px solid;
+}
+
+.gt-style-4 .childs>li:first-child:before {
+  left: 50%;
+}
+
+.gt-style-4 .childs>li:last-child:before {
+  right: 50%;
+}
+
+.gt-style-4 .parents>li {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gt-style-4 .parents>li.spouse div.ind {
+  margin-left: -1px;
+}
+
+.gt-style-4 .partner {
+  margin-top: 5px;
+}
+
+.gt-hr .gt-style-4 div.ind {
+
+}
+.gt-hr .gt-style-4 .partners {
+    padding-left: 5px;
+}
+.gt-hr .gt-style-4 .partner {
+  float: left;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+.gt-hr .gt-style-4 .partner div.ind > div.image > img {
+    width: 70px;
+    height: 70px;
+}
+
+
+/*****
+       .gt-style-5 
+       *****/
+.gt-style-5 {
+    display: block;
+    margin: 0 auto;
+    border: 0px;
+}
+
+.gt-style-5 .childs:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 0px;
+    height: 11px;
+    border-left: 1px solid;
+}
+
+.gt-style-5 .child:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    border-top: 1px solid;
+}
+
+.gt-style-5 .child:first-child:before {
+    left: 0%;
+}
+
+.gt-style-5 .child:first-child > .family > .root > .ind:before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    right: 0px;
+    top: -32px;
+    border-top: 3px solid #fff;
+    right: 50%;
+}
+
+.gt-style-5 .child:last-child:before {
+    right: 100%;
+}
+
+.gt-style-5 .child:only-child:before {
+    right: 50%;
+}
+
+.gt-style-5 .child:last-child > .family > .root > .ind:before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: -31px;
+    border-top: 1px solid #000;
+    right: 50%;
+}
+
+.gt-style-5 .child:only-child > .family > .root > .ind:before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: -32px;
+    border-top: 3px solid #fff;
+    right: 50%;
+}
+
+.gt-style-5 .family > li:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    border-top: 1px solid;
+}
+
+.gt-style-5 .family > li:first-child:before {
+    left: 50%;
+}
+
+.gt-style-5 .family > li:last-child:before {
+    right: 50%;
+}
+
+.gt-style-5 .family > li:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 0;
+    height: 10px;
+    border-left: 1px solid;
+}
+
+.gt-style-5 .family > li:first-child:after {
+    top: -20px;
+    height: 30px;
+}
+
+.gt-style-5 div.ind {
+    display: inline-block;
+}
